@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+aside,
+footer,
+header,
+main {
+    padding: 17px;
+}
+footer {
+    grid-column: 1 / -1;
+}
+header {
+    grid-column: 1 / -1;
+}
+nav {
+    padding: 5px;
+}
+    nav li {
+        margin: 3px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+.btn {
+    margin: 5px;
+    padding: 5px 9px;
+}
+.card {
+    flex-grow: 1;
+    flex-basis: 350px;
+    margin: 11px;
+    padding: 19px;
+}
+    .card p {
+        padding: 5px;
+    }
+    
+.cards {
+    display:flex;
+    flex-direction: row;
+}    
+    
+.container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 75px auto 120px;
+    min-height: 100vh;
+}
+
+.social-media {
+    padding: 5px 9px;
+    
+}
+
+/*
+** FLEXBOX CHALLENEGE
+** Complete all of the following challenges using flexbox
+*/
+
+/* Put the company logo on the left side of the header and the nav on the right */
+
+/* Distribute the navigation items in a horizontal line */
+
+/* Distribute cards in 'main' horizontally and make sure they all have the same height */
+
+/* Distribute cards in aside vertically and make sure any space left in the container is around the elements */
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* In the footer, center the copyright and place the social-media links to the right */
+footer{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+footer small {
+    margin-left: calc(50vw - (36.736px / 2));
+}
+
+/* Put button elements in cards on the bottom of the container */
+.card {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    margin-top: auto;
+}

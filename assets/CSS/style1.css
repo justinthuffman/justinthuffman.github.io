@@ -1,0 +1,112 @@
+/** {
+    box-sizing: border-box;
+    margin: 1;
+    padding: 1;
+}
+:root {
+    --grid-gap: 10px;
+}
+
+.container {
+  display: grid;
+  grid-gap: var(--grid-gap);
+  grid-template-rows: 100px auto 150px;
+  min-height: 100vh;
+}
+
+.main{
+  display: grid;
+  grid-gap: var(--grid-gap);
+  grid-template-columns: 7fr 3fr;
+}
+
+.main__content {
+  display: grid;
+  grid-gap: var(--grid-gap);
+  grid-template-rows: 1fr 1fr;
+}
+
+.main__sidebar {
+  display: grid;
+  grid-gap: var(--grid-gap);
+  grid-template-rows: 1fr 1fr 1fr;
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+* {
+    font: 400 14px 'Roboto';
+}
+aside {
+}
+footer {
+    border-top: 1px solid navy;
+}
+h1 {
+    color: navy;
+    font-size: 3rem;
+}
+header {
+    border-bottom: 1px solid navy;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: center;
+    align-items: center;
+    
+}
+main {
+}
+nav {
+    background-color: #eee;
+    display: flex;
+    align-content: flex-end;
+    
+}
+    nav a {
+        color: #39add1;
+        font-weight: 700;
+        text-decoration: none;
+    }
+ol,
+ul {
+    list-style-type: none;
+}
+small {
+    font-size: .8rem;
+}
+
+.btn {
+    background-color: navy;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+}
+.card {
+    background-color: #eee;
+    border-radius: 11px;
+    border: 1px solid navy;
+}
+    .card a {
+        color: #39add1;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .card h2,
+    .card h3 {
+        color: navy;
+        font-size: 1.25rem;
+    }
+.logo {
+    color: navy;
+    font-size: 24px;
+    text-decoration: none;
+}
+.social-media {
+    border-radius: 5px;
+    border: 1px solid navy;
+}
+    .social-media a {
+        font-weight: 700;
+        text-decoration: none;
+        color: #39add1;
+    }
