@@ -79,9 +79,15 @@ header {
 h2 {
 	text-align: center;
 	padding: 1vw;
+	font-family: Josefin Sans, sans-serif;
+	color: #134074;
 
-	
+}
 
+h3 {
+	text-align: center;
+	/*padding: 1vw;*/
+	color: #0B2545;
 }
 
 .navigation {
@@ -149,7 +155,6 @@ padding: 1vw;
 .devlist {
 	list-style: circle;
 
-
 }
 
 .itlist {
@@ -158,6 +163,40 @@ padding: 1vw;
 }
 
 .projects {
+	border-style: double;
+	border-width: .5em;
+	border-radius: 1vw;	
+	border-color: #134074;
+	width: 80vw;
+	
 
+}
 
+.projecticons {
+	display: flex;
+	flex-wrap: wrap;
+	align-self: center;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-around;
+	width: 80vw;
+
+}
+
+.projecttextlinks {
+	display: flex;
+	flex-wrap: wrap;
+	align-self: center;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-around;
+	padding: 1vw;
+	width: 80vw;
+	
+
+}
+
+footer {
+	display: flex;
+	justify-content: center;
 }
