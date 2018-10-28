@@ -1,51 +1,39 @@
 <!DOCTYPE html>
-<html>
 <html dir="ltr" lang="en-us">
-  <head>
-    <meta charset="utf-8">
+<head>    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Justin Huffman</title>
-    <link rel="stylesheet" href="./assets/css2/style.css">    
+    <link rel="stylesheet" href="./assets/css/style.css">    
 </head>
 <body>
-    <header>
-        <div class ="Namebox">
-            <h1>Justin Huffman</h1>
-            <nav class="menu">
-                <ul>
-                    <li class="menu"><a href="#AboutMe">| About Me</a></li>
-                    <li class="menu"><a href="#Projects"> | Projects | </a></li>
-                    <li class="menu"><a href="#skills">Skills |</a></li>
+		<header>
+			<nav>
+                <ul class="navigation">
+    				<li class="menu"><a href="#me">About Me</a></li>
+    				<li class="menu"><a href="#skills">Skills</a></li>
+    				<li class="menu"><a href="#projects">Projects</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="informationbox">
-        <img class= "picture" id="picture" src="./assets/images/me-cropped.jpg" alt="Picture of me" style="width:372px;height:400px;">
-        <section class="aboutsocial">
-        <section class="about">
-            <h2>About Me</h2>
-            <a name="AboutMe"></a>
-            <p> Tech passionate since birth, the first instance I remember of getting in “big trouble,” was from taking apart my parents’ brand-new ED Betamax VCR at age 8 to “see how it worked.” From building my first computer to play Doom in 1994, to learning about routers, hubs, and switches in the late 90s to host LAN parties with my friends, video games drove my passion for all things tech. This fervent affinity for all things has led to many rewarding opportunities, building, maintaining, and developing networks, websites, programs, and apps. When I’m not working in technology you can find my playing on and in it. Weekends find me overclocking and benchmarking my PC for the fastest speeds possible to coding and wiring an Arduino to open my garage door with my phone: I love to tinker. Recesses from all things digital include spinning vinyl from my collection (usually jazz), enjoying a home or craft brew, or embarking a tasty food adventure around town.</p>
-            <p>You can reach me via: </p>
-            <a href="tel:6146538285">Phone</a>
-            <a href="mailto:justin.t.huffman@gmail.com">or, email.</a>
-        </section>
-                <div class="socialbox">
-                    <h2>Find Me Online</h2>
-                        <ul class="social">
-                            <li><a href="https://github.com/justinthuffman/"><img src="./assets/images/github.png" alt="GitHub" style="width:100px;height:100px;"></a></li>
-                            <li><a href="https://www.linkedin.com/in/justinthuffman"><img src="./assets/images/linkedin.png" alt="LinkedIn" style="width:100px;height:100px;"></a></li>
-                            <li><a href="https://twitter.com/technohuff"><img src="./assets/images/twitter.png" alt="Twitter" style="width:100px;height:100px;"></a></li>
-                        </ul>
-                </div> 
-     </div>
-    <div>
-            <section class="skillsbox">
-            <h2 id="skills">Skills</h2>
-            <ul class="skills">
-                <li>Java</li>
+			</nav>
+			<h1 class="nameheader">Justin Huffman</h1>
+			<nav>
+				<ul class="socialmedia">
+					<li><a href="https://github.com/justinthuffman/"><img class="socialimage" src="./assets/images/github.png" alt="GitHub" style="width:100px;height:100px;"></a></li>
+					<li><a href="https://www.linkedin.com/in/justinthuffman"><img class="socialimage" src="./assets/images/linkedin.png" alt="LinkedIn" style="width:100px;height:100px;"></a></li>
+					<li><a href="https://twitter.com/technohuff"><img class="socialimage" src="./assets/images/twitter.png" alt="Twitter" style="width:100px;height:100px;"></a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="aboutandskillsgrid">
+		<article class="me" id="me">
+			<h2 id="me">About Me</h2>
+			<img class = "pictureofme" src="./assets/images/me-rounded.png" alt="Picture of me">Tech passionate since birth, the first instance I remember of getting in “big trouble,” was from taking apart my parents’ brand-new ED Betamax VCR at age 8 to “see how it worked.” From building my first computer to play Doom in 1994, to learning about routers, hubs, and switches in the late 90s to host LAN parties with my friends, video games drove my passion for all things tech. This fervent affinity for all things has led to many rewarding opportunities, building, maintaining, and developing networks, websites, programs, and apps. When I’m not working in technology you can find my playing on and in it. Weekends find me overclocking and benchmarking my PC for the fastest speeds possible to coding and wiring an Arduino to open my garage door with my phone: I love to tinker. Recesses from all things digital include spinning vinyl from my collection (usually jazz), enjoying a home or craft brew, or embarking a tasty food adventure around town.
+			</img>
+		</article>
+		<article class="skills" id="skills">
+			<h2 id="skills">Skills</h2>
+			<ul class="devlist">
+				<h3>Web and Software Development</h3>
+				<li>Java</li>
                 <li>Spring Boot</li>
                 <li>TDD</li>
                 <li>HTML5</li>
@@ -55,18 +43,28 @@
                 <li>MVC</li>
                 <li>Git/Github</li>
                 <li>Database and SQL / Object Relational Mappers</li>
-            </ul>
-        </section>
-    </div>
-        <section class="projectsbox">
-            <h2 id="Projects">Projects</h2>
-            <article class="projectimages">
-                <a href="https://github.com/justinthuffman/virtual-pets-amok"><img src="./assets/images/pets.png" alt="Virtual Pets" style="width:320px;height:200px;">Virtual Pets Amok</a>
-                <a href="https://github.com/justinthuffman/song-reviews"><img src="./assets/images/songreviews.png" alt="Song Reviews Site" style="width:320px;height:200px;">Song Reviews</a>
-               <a href="https://github.com/justinthuffman/fortune-teller"><img src="./assets/images/fortuneteller.png" alt="Fortune Teller" style="width:320px;height:200px;">Fortune Teller</a>
-               
-        </section>
-    </div>
-<footer><small>&copy; 2018 Justin Huffman</small></footer>
+			</ul>
+			<ul class="itlist">
+				<h3>Information Technology</h3>
+					<li>Cisco Certified Entry Network Technician (CCENT)</li>
+					<li>Vendors: Cisco, Dell, HP, Force10, Extreme, Foundry, Brocade, Netscreen, Firebox, 3Com, Force 10, Juniper, Linksys, Watchguard, Polycom</li>
+					<li>Devices: Routers, Switches, Access Points, VoIP, Servers, Firewalls, ASA/UTMs</li>
+					<li>Windows Server: 2000 - 2012 R2. Active Directory/Exchange</li>
+					<li>Mac OS X/macOS including macOS Server: 10.6 - 10.13</li>
+					2<li>Linux: Ubuntu 12-14 LTS, CentOS 7.0</li>
+					<li>Technologies: DNS, DHCP, VPN, VLAN, Layer 2 and 3 switching, MPLS, EIGRP, 802.11x, SSH, FTP.</li>
+			</ul>
+		</article>
+	</div>
+		<article class="projects" id="projects">
+			<h2>Projects</h2>
+			<a href="https://github.com/justinthuffman/virtual-pets-amok"><img src="./assets/images/pets.png" alt="Virtual Pets" style="width:320px;height:200px;">Virtual Pets Amok</a>
+			<a href="https://github.com/justinthuffman/song-reviews"><img src="./assets/images/songreviews.png" alt="Song Reviews Site" style="width:320px;height:200px;">Song Reviews</a>
+			<a href="https://github.com/justinthuffman/fortune-teller"><img src="./assets/images/fortuneteller.png" alt="Fortune Teller" style="width:320px;height:200px;">Fortune Teller</a>
+		</article>
+		<footer>
+			<small>&copy; 2018 Justin Huffman</small>
+		</footer>
+
 </body>
 </html>

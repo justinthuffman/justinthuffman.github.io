@@ -1,159 +1,157 @@
 /*COLOR PALLETE
-YELLOW, E9D758
-GREEN, 297373
-ORANGE, FF8552
+ORANGE, FF652D
 GREY, E6E6E6
+LIGHT BLUE: 134074;
+DARK BLUE: 0B2545;
 CHARCOAL, 39393A*/
-
-
-/*Namebox
-  menu
-socialbox
-  social
-informationbox
-  about
-  skills
-projectsbox
-  projectimages*/
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Krub');
 
 * {
-  box-sizing: border-box; }
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: #0B2545;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0B2545;
+    
+}
+
+a:hover {
+    color: #134074;
+    font-style:bold;
+}
 
 body {
-  display: grid;
-  margin: 2rm auto 2rem auto;
-  max-width: 1000px;
-  background-color: #E6E6E6; }
 
-html {
-  font-family: helvetica, arial, san-serif;
-  font-size: 100%;
-  color: #39393A;
-  font-weight: 400; }
-img {
-  padding: .5rem;
+  	color: #39393A;
+	font-family: Roboto, sans-serif;
+	background-color: #E6E6E6;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 1vw;
+	align-items: center;
+
 }
 
-h1, {
-  margin: 0;
-  color: #E9D758;
-  }
-
-h2 {
-  margin: 0;
-  color: #297373;
-  
-  }
-
-a {
-  color: #39393A;
-  text-decoration: none; }
+.main {
 
 
-ul.menu {
-  padding: 0;
-  display: inline;}
 
-
-li.menu {
-  padding: 0;
-  display: inline; 
-}
-
-ul.social {
-  padding: 0;
-  list-style: none;
-  display: inline;}
-
-
-li.social {
-  padding: 0;
-  list-style: none;
-  display: inline; 
 }
 
 header {
-  background: #E6E6E6;
-    padding: 5rem 5vw 2rem; }
-  header h1 {
-    margin: 0;}
-
-nav {
-
-  background: #FF8552;
-  padding: 1rem 10vw 1rem 1vw;
-  font-weight: 700;
-  }
-
-menu {
-  display: inline;
-}
-
-.aboutsocial {
-  display: grid;
-  grid-gap: 15px 20px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 100px 100px 100px;
-  margin: 2rem auto;
-  /*width: 1000px;*/
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	background-color: #FF652D;
+	font-family: Krub, sans-serif;
+	font-weight: bold;
+	width: 80vw;
+	border-style: double;
+	border-color: #134074;
+	border-width: .5em;
+	border-radius: 1vw;
+	align-items: center;
 
 }
 
-.projectsbox {
-  background-color: #E6E6E6;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 1rem;
-  border: 1px dashed #297373;
-
-}
-.projectimages {
-  background-color: #E6E6E6;
-  display: grid;
-  grid-auto-flow: column;
-  padding: 1rem;
-  /*border: 1px dashed #297373;*/
-
-}
-
-.informationbox {
-background-color: #E6E6E6;
-  display: grid;
-  grid-auto-flow: column;
-  /*gird-gap: 15px 20px;*/
-  border: 1px dashed #297373;
-
-}
-.picture {
-  background-color: #E6E6E6;
-  padding: 1rem;
-  
-}
-.about {
-  background-color: #E6E6E6;
-  
-  
-  padding 1rem;
-}
-.skillsbox {
-  background-color: #E6E6E6;
-  justify-content: center;
-  padding: 1rem;
-  vertical-align: top;
-  background-color: #E6E6E6;
-  border: 1px dashed #297373; 
-}
-
-.socialbox {
-  
-  display: grid;
-  /*margin: 2rem auto 2rem auto;*/
-  width: 200px;
-  justify-content: center;
-  vertical-align: top;
-  background-color: #E6E6E6;
-  
+.aboutandskillsgrid {
+	display: grid;
+	grid-gap: 5vw;
+	grid-template-columns: 1fr 1fr;
+	border-style: double;
+	border-width: .5em;
+	border-radius: 1vw;	
+	border-color: #134074;
+	width: 80vw;
+	text-align: center;
 }
 
 
+h2 {
+	text-align: center;
+	padding: 1vw;
+
+	
+
+}
+
+.navigation {
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: calc(.5em + .5vw);
+}
+
+.nameheader {
+	display: flex;
+	justify-content: center;
+	font-size: 2.25vw;
+	padding: 1vw;
+	font-family: Josefin Sans, sans-serif;
+	color: white;
+
+
+
+}
+
+.socialmedia {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-around;
+
+}
+
+.socialimage {
+	max-width: 2vw;
+	max-height: 2vw;
+}
+
+.me {
+	padding: 1vw;
+	
+}
+
+.pictureofme {
+
+	width: 25vw;
+	shape-outside: circle(50%);
+	float: left;
+	padding: .5vw;
+
+
+}
+
+
+.skills {
+padding: 1vw;
+
+
+}
+
+.devlist {
+	list-style: none;
+
+
+}
+
+.itlist {
+	list-style: none;
+	
+}
+
+.projects {
+
+
+}
