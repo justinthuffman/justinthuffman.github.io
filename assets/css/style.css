@@ -71,6 +71,10 @@ header {
 
 }
 
+header:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.70);
+}
+
 
 .aboutandskillsgrid {
 	background: rgba(230, 230, 240, 0.6);
@@ -84,6 +88,54 @@ header {
 	width: 80vw;
 	min-width: 360px;
 	text-align: center;
+}
+
+.aboutandskillsgrid:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.70);
+}
+.backdrop {
+	display: none;
+	position: fixed;
+	background: rgba(0,0,0, 0.5);
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+
+}
+.modal {
+	display: none;
+	position: fixed;
+	background: white;
+	padding: 1vw;
+	width: 25vw;
+	top: 12vw;
+	left: calc(25vw);
+	z-index: 1;
+}
+.modalButton {
+	display: flex;
+	opacity: 0.3;
+	font-size: 25px;
+	border-color: transparent;
+	transform: rotateZ(45deg);
+	color: #0B2545;
+}
+
+.modalButton:hover {
+	display: flex;
+	opacity: 1;
+	font-size: 25px;
+	border-color: transparent;
+	transform: rotateZ(45deg);
+	font-style: bold;
+	cursor: pointer;
+
+}
+
+.biolist {
+	list-style: none;
+	text-align: left;
 }
 
 
@@ -116,8 +168,12 @@ h3 {
 	grid-template-columns: 10fr 1fr;
 	border-style: dotted;
 	padding: .5vw;
-
 }
+
+.navWithClose:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.70);
+}
+
 .navigation {
 	
 	display: flex;
@@ -126,12 +182,12 @@ h3 {
 	justify-content: space-around;
 	font-size: calc(.5em + .5vw);
 	padding: .4vw;
-
 }
+
 .closebutton {
 	background-color: #FF652D;
 	opacity: 0.3;
-	font-size: 1.5em;
+	font-size: 25px;
 	border-color: transparent;
 	transform: rotateZ(45deg);
 	color: #0B2545;
@@ -139,12 +195,12 @@ h3 {
 	position: relative;
 	height: 10px;
 	left: 10px;
-
 }
+
 .closebutton:hover {
 	background-color: #FF652D;
 	opacity: 1;
-	font-size: 1.6em;
+	font-size: 25px;
 	font-style: bold;
 	color: #0B2545;
 	transform: rotateZ(45deg);
@@ -152,8 +208,8 @@ h3 {
 	height: 10px;
 	left: 10px;
 	cursor: pointer;
-
 }
+
 .buttonExpand {
 	background-color: #FF652D;
 }
@@ -199,8 +255,26 @@ h3 {
 	max-height: 2vw;
 }
 
+.socialimage:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.70);
+	background-color: transparent;
+
+}
+
 .me {
 	padding: 1vw;
+	
+}
+
+.aboutMeLink {
+	padding: 1vw;
+	
+}
+.aboutMeLink:hover {
+	padding: 1vw;
+	color: #FF652D;
+	cursor: pointer;
+
 	
 }
 
@@ -210,16 +284,11 @@ h3 {
 	shape-outside: circle(50%);
 	float: left;
 	padding: .5vw;
-
-
-
 }
 
 
 .skills {
 	padding: 1vw;
-
-
 }
 
 .skillsgrid {
@@ -249,7 +318,13 @@ h3 {
 	border-color: #134074;
 	width: 80vw;
 	min-width: 360px;
+	text-align: center;
+	padding: 1vw;
 
+}
+
+.projects:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.70);
 }
 
 .projectslide {
@@ -273,6 +348,10 @@ h3 {
 	text-align: center;
 }
 
+.projecticons:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.70);
+}
+
 .projecttextlinks {
 	display: flex;
 	flex-wrap: wrap;
@@ -287,13 +366,46 @@ h3 {
 
 }
 
-.projectDescriptions {
+.projectDescriptionList {
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	padding: 1vw;
-	justify-content: center;
 
+}
+.projectDescriptions {
+	display:none;
+}
+.showDescriptionButton {
+	display:inline-block;
+	align-self: center;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background-color: #FF652D;
+	color: #0B2545;
+	font-size: 1em;
+	border-radius: .5vw;
+	padding: .5vw;
+}
+.showDescriptionButton:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.70);
+}
+
+.hideDescriptionButton {
+	display:none;
+	align-self: center;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background-color: #FF652D;
+	color: #0B2545;
+	font-size: 1em;
+	border-radius: .5vw;
+	padding: .5vw;
+}
+.hideDescriptionButton:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.70);
 }
 
 footer {
