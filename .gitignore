@@ -36,6 +36,7 @@
 /node/
 node_tmp/
 node_modules/
+/node_modules/
 npm-debug.log.*
 /.awcache/*
 /.cache-loader/*
@@ -146,4 +147,3 @@ Desktop.ini
 # ESLint
 ######################
 .eslintcache
-node_modules
