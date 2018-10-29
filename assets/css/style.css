@@ -13,31 +13,31 @@ CHARCOAL, 39393A*/
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 a:link {
-    color: #0B2545;
-    text-decoration: none;
+	color: #0B2545;
+	text-decoration: none;
 }
 
 a:visited {
-    color: #0B2545;
-    
+	color: #0B2545;
+
 }
 
 a:hover {
-    color: #fff;
-    font-style:bold;
+	color: #fff;
+	font-style:bold;
 }
 
 body {
 	background-image: url(../images/background.png);
 	background-size: cover;
 	background-attachment: fixed;
-  	color: #39393A;
+	color: #39393A;
 	font-family: Niramit, sans-serif;
 	font-size: calc(8px + .5vw);
 	display: flex;
@@ -107,6 +107,10 @@ h3 {
 	display:block;
 }
 
+.buttonExpand {
+	display:none;
+}
+
 .navWithClose {
 	display: grid;
 	grid-template-columns: 10fr 1fr;
@@ -128,7 +132,7 @@ h3 {
 	background-color: #FF652D;
 	opacity: 0.3;
 	font-size: 1.5em;
-	border-color: #FF652D;
+	border-color: transparent;
 	transform: rotateZ(45deg);
 	color: #0B2545;
 	align-self: start;
@@ -141,8 +145,6 @@ h3 {
 	background-color: #FF652D;
 	opacity: 1;
 	font-size: 1.6em;
-	border-color: #FF652D;
-	border-opa
 	font-style: bold;
 	color: #0B2545;
 	transform: rotateZ(45deg);
@@ -151,6 +153,25 @@ h3 {
 	left: 10px;
 	cursor: pointer;
 
+}
+.buttonExpand {
+	background-color: #FF652D;
+}
+.openbutton {
+	background-color: #FF652D;
+	border-color: transparent;
+	opacity: 0.3;
+	font-size: 1em;
+	font-family: Niramit, sans-serif;
+	color: #0B2545;
+	cursor: pointer;
+}
+.openbutton:hover {
+	background-color: #FF652D;
+	opacity: 1;
+	font-size: 1em;
+	color: #0B2545;
+	font-family: Niramit, sans-serif;
 }
 
 .nameheader {
@@ -196,7 +217,7 @@ h3 {
 
 
 .skills {
-padding: 1vw;
+	padding: 1vw;
 
 
 }
@@ -239,7 +260,6 @@ padding: 1vw;
 	align-items: center;
 	justify-content: center;
 	justify-content: space-around;
-
 	width: 80vw;
 
 }
@@ -264,6 +284,15 @@ padding: 1vw;
 	padding: 1vw;
 	width: 80vw;
 	
+
+}
+
+.projectDescriptions {
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 1vw;
+	justify-content: center;
 
 }
 
