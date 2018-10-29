@@ -8,13 +8,16 @@
 <body>
 	<div class="main">
 		<header>
-			<nav>
+			<div class="buttonFunction">
+			<div class="navWithClose">
                 <ul class="navigation">
     				<li class="menu"><a href="#me">About Me</a></li>
     				<li class="menu"><a href="#skills">Skills</a></li>
     				<li class="menu"><a href="#projects">Projects</a></li>
                 </ul>
-			</nav>
+                <button class="closebutton">+</button>
+               </div>
+           </div>
 			<h1 class="nameheader">Justin Huffman</h1>
 			<nav>
 				<ul class="socialmedia">
@@ -64,10 +67,10 @@
 	</div>
 		<article class="projects" id="projects">
 			<h2>Projects</h2>
-			<p class="projecticons">
-				<a href="https://github.com/justinthuffman/virtual-pets-amok"><img src="./assets/images/pets.png" alt="Virtual Pets" style="width:320px;height:200px;"></a>
-				<a href="https://github.com/justinthuffman/song-reviews"><img src="./assets/images/songreviews.png" alt="Song Reviews Site" style="width:320px;height:200px;"></a>
-				<a href="https://github.com/justinthuffman/fortune-teller"><img src="./assets/images/fortuneteller.png" alt="Fortune Teller" style="width:320px;height:200px;"></a>
+			<p class="projectslide">
+				<a href="https://github.com/justinthuffman/virtual-pets-amok"><img src="./assets/images/pets.png"  class="projecticons" alt="Virtual Pets"></a>
+				<a href="https://github.com/justinthuffman/song-reviews"><img src="./assets/images/songreviews.png"  class="projecticons" alt="Song Reviews Site"></a>
+				<a href="https://github.com/justinthuffman/fortune-teller"><img src="./assets/images/fortuneteller.png" class="projecticons" alt="Fortune Teller"></a>
 			</p>
 			<p class="projecttextlinks">
 				<a href="https://github.com/justinthuffman/virtual-pets-amok">Virtual Pets Amok</a>
@@ -79,6 +82,6 @@
 			<small>&copy; 2018 Justin Huffman</small>
 		</footer>
 </div>
+<script src="/js/dom.js"></script>
 </body>
-
 </html>
