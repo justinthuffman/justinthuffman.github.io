@@ -270,13 +270,13 @@ h3 {
 	padding: 1vw;
 	
 }
-/* .aboutMeLink:hover {
+.aboutMeLink:hover {
 	padding: 1vw;
 	color: #FF652D;
 	cursor: pointer;
 
 	
-} */
+}
 
 .pictureofme {
 
@@ -369,6 +369,7 @@ h3 {
 .projectDescriptionList {
 	list-style: none;
 	display: grid;
+	grid-gap: 1vw;
 	grid-template-columns: 1fr 1fr 1fr;
 	padding: 1vw;
 
